@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Bramastri — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#top" class="logo" aria-label="Maria Bramastri — home">
+          <span>MARIA</span>
+          <span>BRAMASTRI</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <ul role="list">
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main id="top">
+
+      <section id="projects" class="projects-section" aria-label="Projects">
+        <h2 class="projects-section__title">PROJECTS</h2>
+
+  <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Portfolio projects">
+    
+    <!-- Tombol Navigasi -->
+    <button class="carousel__btn carousel__btn--prev" id="btn-prev" aria-label="Previous project" aria-controls="carousel-track">
+      <span aria-hidden="true">&#8592;</span>
+    </button>
+
+    <div class="carousel__viewport">
+      <ul id="carousel-track" class="carousel__track" aria-live="polite">
+
+        <!-- Slide 1 -->
+        <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 3">
+          <div class="carousel__img-wrapper">
+            <img src="green.png" alt="Project One — a scientist's code portfolio" class="carousel__image" loading="lazy" />
+          </div>
+          <p class="carousel__caption">Project 1</p>
+        </li>
+
+        <!-- Slide 2 -->
+        <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 3">
+          <div class="carousel__img-wrapper">
+            <img src="red.png" alt="Project Two — data visualisation dashboard" class="carousel__image" loading="lazy" />
+          </div>
+          <p class="carousel__caption">Project 2</p>
+        </li>
+
+        <!-- Slide 3 -->
+        <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 3">
+          <div class="carousel__img-wrapper">
+            <img src="yellow.png" alt="Project Three — e-commerce storefront" class="carousel__image" loading="lazy" />
+          </div>
+          <p class="carousel__caption">Project 3</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <button class="carousel__btn carousel__btn--next" id="btn-next" aria-label="Next project" aria-controls="carousel-track">
+      <span aria-hidden="true">&#8594;</span>
+    </button>
+
+  </div>
+</section>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section id="about" class="section section--about" aria-label="About me">
+        <h2 class="section-title">ABOUT ME</h2>
+
+        <div class="about__content">
+          <div class="about__avatar-wrapper" aria-hidden="true">
+            <img
+              src="Hello2.jpeg"
+              alt="Maria Bramastri — illustrated avatar"
+              class="about__avatar"
+              width="180"
+              height="180"
+            />
+          </div>
+
+          <div class="about__bio">
+            <p>
+              HI, I'M MARIA BRAMASTRI. AS A SCIENTIST TURNED FRONT-END
+              DEVELOPER, I SEE CODE AS THE DNA OF THE DIGITAL WORLD. SO,
+              I'M DEDICATED TO BUILDING USER-FRIENDLY WEBSITES WITH CLEAN CODE.
+            </p>
+            <p>
+              I'M CURRENTLY WORKING AS A FREELANCER AND I WELCOME
+              (HIRE ME PLEASE) COLLABORATIONS FOR LONG AND SHORT TERM.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section id="contact" class="section section--contact" aria-label="Contact">
+        <h2 class="section-title">FEEL FREE TO CONTACT ME VIA :</h2>
+
+        <ul class="contact__icons" role="list">
+          <li>
+            <button
+              class="contact__icon-btn"
+              aria-label="Send me an email"
+              id="open-email-modal"
+            >
+              <!-- Mail icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="32" height="32">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/stilleweasel"
+              class="contact__icon-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my Instagram @stilleweasel"
+            >
+              <!-- Instagram icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="32" height="32">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="5" fill="none"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/maria-bramastri"
+              class="contact__icon-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View my LinkedIn profile"
+            >
+              <!-- LinkedIn icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="32" height="32">
+                <rect x="2" y="2" width="20" height="20" rx="3"/>
+                <line x1="7" y1="10" x2="7" y2="17"/>
+                <line x1="7" y1="7" x2="7" y2="7.5"/>
+                <line x1="11" y1="10" x2="11" y2="17"/>
+                <path d="M11 13a3 3 0 0 1 6 0v4"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <p class="footer__copy">&copy; <span id="footer-year"></span> MARIA BRAMASTRI. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      aria-label="Back to top"
+      hidden
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="22" height="22">
+        <polyline points="18 15 12 9 6 15"/>
+      </svg>
+    </button>
+
+    <!-- ===== EMAIL MODAL ===== -->
+    <div
+      class="modal-overlay"
+      id="email-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      hidden
+    >
+      <div class="modal">
+        <button class="modal__close" id="close-email-modal" aria-label="Close email form">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <h3 id="modal-title" class="modal__title">SEND ME A MESSAGE</h3>
+
+        <div class="modal__form">
+          <div class="form-group">
+            <label for="sender-email" class="form-label">YOUR EMAIL</label>
+            <input
+              type="email"
+              id="sender-email"
+              class="form-input"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message-subject" class="form-label">SUBJECT</label>
+            <input
+              type="text"
+              id="message-subject"
+              class="form-input"
+              placeholder="LET'S COLLABORATE!"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message-body" class="form-label">MESSAGE</label>
+            <textarea
+              id="message-body"
+              class="form-textarea"
+              rows="5"
+              placeholder="HI MARIA, I WOULD LOVE TO..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="form-submit" id="send-email-btn">SEND MESSAGE</button>
+          <p class="form-note" id="form-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
