@@ -173,7 +173,7 @@ input[type="search"]::placeholder { color: #B4B2A9; }
 }
 
 .product-image-wrapper {
-    aspect-ratio: 3 / 4; /* Rasio estetik ala katalog baju (bisa diganti 1/1 jika mau kotak) */
+    aspect-ratio: 3 / 4;
     background-color: #F5F5F5;
     overflow: hidden;
     margin-bottom: 12px;
